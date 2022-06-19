@@ -1,4 +1,4 @@
-const images=[ '/images/02.webp', '/images/04.webp', '/images/05.jpg']
+const images=[ 'https://jayrajvmu.github.io/test/Online-Demo/images/02.webp', 'https://jayrajvmu.github.io/test/Online-Demo/images/04.webp', 'https://jayrajvmu.github.io/test/Online-Demo/images/05.jpg']
 
 
 const imagetag=document.getElementById('imagetag');
@@ -13,12 +13,9 @@ function myFunction() {
  let currentValue=imagetag.src;  
 
 
- let position = currentValue.search("/images");
-
-
+ let position = currentValue.search("https://jayrajvmu.github.io/test/Online-Demo/images");
  let originalVal =(currentValue.slice(position));
- 
- const index = images.findIndex(image => image == originalVal);
+ const index = images.findIndex(image => image == currentValue);
 
 
 
@@ -32,6 +29,7 @@ if(index==2){
     $("#dot1").addClass("active");
 }
 else{
+    console.log(index);
     imagetag.src=images[index+1];
     var dotcount=index+2;
     var dotcountless=index+1;
@@ -46,9 +44,12 @@ buttonLess.addEventListener("click", myFunction2);
 function myFunction2() {
 
  let currentValue=imagetag.src;  
- let position = currentValue.search("/images");
+ console.log(currentValue);
+ let position = currentValue.search("https://jayrajvmu.github.io/test/Online-Demo/images");
  let originalVal =(currentValue.slice(position));
- const index = images.findIndex(image => image == originalVal);
+ console.log(originalVal);
+ const index = images.findIndex(image => image == currentValue);
+ console.log(index)
 
 if(index==0){
     imagetag.src=images[2];
@@ -93,21 +94,24 @@ jQuery(".dot i").click(function(){
 
 
 
-setInterval(myTimer,5000);
+setInterval(myTimer, 4000);
 
 
 let currentImageValue=imagetag.src;  
 
-let CurrentPosition = currentImageValue.search("/images");
+let CurrentPosition = currentImageValue.search("https://jayrajvmu.github.io/test/Online-Demo/images");
 let ImageOriginalVal =(currentImageValue.slice(CurrentPosition));
+console.log(ImageOriginalVal)
 function myTimer() {
 
     let currentImageValue=imagetag.src;  
 
     let CurrentPosition = currentImageValue.search("/images");
     let ImageOriginalVal =(currentImageValue.slice(CurrentPosition));
+    console.log(ImageOriginalVal)
 
-    const ImageIndex = images.findIndex(image => image == ImageOriginalVal);
+    const ImageIndex = images.findIndex(image => image == currentImageValue);
+ console.log(ImageIndex)
 
 
  if(ImageIndex==2){
