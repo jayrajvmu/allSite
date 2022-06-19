@@ -1,0 +1,115 @@
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.content .left,
+.content .right
+{
+
+    width: 100%;
+padding: 10px;
+}
+
+.content .left img{
+    width: 100%;
+    height: 500px;
+    object-fit: contain;
+
+}
+
+
+
+.right .right-category{
+   color:#878787;
+}
+
+.right .right-description{
+   font-size: 13px;
+   font-weight: 400;
+ }
+
+ .right .right-rating{
+    font-size: 13px;
+    font-weight: 400;
+  }
+
+ .badgecolor{
+    background-color: rgb(8 207 91) !important;
+}
+
+.cart-btn-div{
+    margin-top: 10px;
+}
+.cart-btn-div button{
+width: 35%;
+margin: 0 10px;
+font-size: 15px;
+}
+
+.related{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+.related .card{
+    margin:30px;
+    width: 300px !important;
+    border: 2px solid transparent !important;
+    box-shadow: 13px 22px 62px -23px rgba(109, 102, 102, 0.75);
+    padding-top: 10px !important;
+    
+color: black;
+}
+
+.related .card .card-image{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-left: 30%;
+}
+
+.heading h3{
+    color: rgb(8 207 91);
+    text-align: center;
+    margin: 10px;
+}
+.related .card .card-title{
+    font-size: 10px;
+}
+
+@media only screen and (min-width:800px) {
+    .content {
+        justify-content: space-between;
+        flex-direction: row;
+
+    }
+    .content .left,
+.content .right
+{
+   
+    width: 50%;
+    padding: 20px;
+}
+.content {
+    margin-top: 20px;
+}
+    
+}
+
+@media only screen and (min-width:1100px) {
+
+    .content .left img{
+        width: 500px;
+
+    
+    }
+
+    .cart-btn-div button{
+        width: 200px;
+        margin: 0 10px;
+        }
+        
+      
+}
