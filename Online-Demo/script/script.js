@@ -116,7 +116,12 @@ itemsvalue++;
     let newitemsvalue=itemsvalue+20;
 
   
-    $("#loadmorebtn").attr("onclick",  'loadData('+newitemsvalue+',' +itemsvalue+')');
+if(itemsvalue==80){
+  $("#loadmorebtn").remove();
+} 
+
+$("#loadmorebtn").attr("onclick",  'loadData('+newitemsvalue+',' +itemsvalue+')');
+
 
   })
 
