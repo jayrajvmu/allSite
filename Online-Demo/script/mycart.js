@@ -127,4 +127,4 @@ $(document).ready(function(){
    alert("Removed")
        }
        function finished(id) {
-        location.href = "'/'page'/'product.html?id="+id;       }
+        location.href = "/page/product.html?id="+id;       }
