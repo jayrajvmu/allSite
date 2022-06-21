@@ -34,7 +34,7 @@ $(document).ready(function(){
            </p>
         <b>Total Amount:<span id="totalprice${value.id}${datata[i][2]}"> $ ${value.price*datata[i][1]}</span></b>
            <div class="d-grid gap-2">
-          <button class="btn btn-success" type="button"><a href="page/product.html?id=${value.id}">Buy</a></button>
+          <button class="btn btn-success" type="button"><a href="product.html?id=${value.id}">Buy</a></button>
         
           <button class="btn btn-primary" type="button" onclick ='removecart("${value.id}", "${datata[i][2]}")'>Remove</button>
         </div>
