@@ -1,0 +1,86 @@
+* {
+    text-decoration: none !important;
+    margin: none;
+    padding: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: rgb(235, 236, 241) !important;
+}
+
+.main .container i {
+
+    font-size: 40px;
+
+     color: rgb(13, 180, 13); 
+}
+
+.main .container h3 {
+
+    font-size: 30px;
+
+}
+
+.main .container h3 span {
+
+    color: rgb(8, 207, 91);
+}
+
+.main .container .menu a {
+
+    padding: 0 10px;
+    color: rgb(8, 207, 91);
+    border-bottom: 2px solid transparent;
+    font-weight: 600;
+}
+
+.main .container .menu a:hover {
+
+    border-bottom: 2px solid black;
+}
+
+
+
+.main .menubar a {
+    color: white;
+    font-size: 10px;
+    border-bottom: 2px solid transparent;
+
+}
+.main .menubar a:hover {
+    color: rgb(8, 207, 91);
+    border-bottom: 1px solid rgb(8, 207, 91);
+}
+
+.main .container .menu {
+    display: none;
+}
+
+
+@media only screen and (min-width:600px) {
+    .main .container i {
+        font-size: 70px;
+        }
+    
+    .main .container h3 {
+        font-size: 50px;    
+    }
+
+    .main .menubar a {
+        font-size: 12px;
+    
+    }
+    
+}
+
+
+@media only screen and (min-width: 800px) {
+    .main .container .menu {
+        display: block;
+    }
+
+
+}
+

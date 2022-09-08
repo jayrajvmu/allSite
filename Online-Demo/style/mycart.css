@@ -1,0 +1,41 @@
+
+.content{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+.content .card{
+    margin: 10px;
+    width: 300px !important;
+    border: 2px solid transparent !important;
+    box-shadow: 13px 22px 62px -23px rgba(109, 102, 102, 0.75);
+    padding-top: 10px !important;
+    
+
+}
+.content .card img{
+width: 150px;
+height: 150px;
+object-fit: contain;
+margin-left: 20%;
+
+
+}
+.content .card .card-title{
+   font-size: 12px;
+    
+    
+    }
+    .content .card p, 
+    .content .card b 
+{
+        font-size: 12px;
+        margin-bottom: 2px !important;
+         
+         
+         }
+      
+.content .card  button{
+    margin-top: 10px;
+}

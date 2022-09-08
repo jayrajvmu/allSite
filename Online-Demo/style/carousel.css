@@ -1,0 +1,89 @@
+.right .top-img{
+    position: relative !important;
+}
+#top-image{
+    position: relative !important;
+
+}
+.less{
+    position: absolute;
+    top:28%;
+    left:1%;
+}
+.add{
+    position: absolute;
+
+
+    top:28%;
+    
+    right: 1%;
+}
+
+.arrow{
+    font-size: 50px !important;
+    opacity: 0.2;
+}
+.arrow:hover{
+    opacity: 1;  
+    color: #fff;
+}
+.dot{
+    position: absolute;
+
+    right:45%;
+}
+
+ 
+
+
+.dot i{
+    font-size: 5px;
+    padding: 5px;
+    
+}
+.dot i:hover{
+    color:red;
+    
+}
+.dot .active{
+color:blue;
+}
+
+
+@media only screen and (min-width: 800px) {
+
+    .arrow{
+        font-size: 60px !important;
+    }
+    .less{
+  
+        top:35%;
+        left:1%;
+    }
+    .add{
+        top:35%;
+
+        right: 1%;
+    }
+
+    .dot{
+    
+     right:50%;
+    }
+    
+    .dot i{
+        font-size: 8px;
+     
+       
+}
+}
+
+
+@media only screen and (min-width:500px) {
+
+
+    .dot i{
+        font-size: 7px;
+        padding: 5px;
+       
+}}

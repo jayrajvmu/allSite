@@ -1,0 +1,66 @@
+.content{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.content .card{
+    width: 200px;
+    color:black;
+}
+.content  .card-image{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-left:20%;
+
+}
+
+.badgecolor{
+    background-color: rgb(8 207 91) !important;
+}
+.welcome h3{
+    text-align: center;
+    color:rgb(8, 207, 91);
+    margin:10px;
+}
+
+.card-body .card-title{
+    font-size: 10px;
+}
+
+
+.card-body .card-text{
+    font-size: 9px;
+}
+@media only screen and (min-width:600px) {
+    .card-body .card-title{
+        font-size: 13px;
+    }
+    .card-body .card-text{
+        font-size: 12px;
+    }
+    .content  .card-image{
+        width: 150px;
+        height: 150px;
+        margin-left:30%;
+    }
+
+    .content .card{
+        width: 400px;
+    }
+}
+
+@media only screen and (min-width:767px) {
+    .content  .card-image{
+
+        margin-left:1%;
+    }
+
+    .content .card{
+        width: 600px;
+    }
+}
+
